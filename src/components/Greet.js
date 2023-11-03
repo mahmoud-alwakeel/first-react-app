@@ -9,7 +9,16 @@ import React from "react";
 // }
 
 
-/* export */ const Greet = () => <h1>Hello there from a functional component</h1>
+const Greet = props => {
+    console.log(props)
+    // we enclose everything inside a Div as we must return only one HTML element
+    return (
+        <div>
+            <h1>Greetings {props.name}, age: {props.age}</h1>
+            {props.children}
+        </div>
+    )
+}
 
 // for most of the cases we will be used default export
 export default Greet
