@@ -3,6 +3,7 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
 import { Component } from 'react';
 
 // moved this function to components/Greet.js
@@ -17,7 +18,8 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-      <Greet name="wakeel" age="22">
+        <Message />
+      {/* <Greet name="wakeel" age="22">
         <p>this is a children probs</p>
       </Greet>
       <Greet name="aly" age="17">
@@ -25,7 +27,7 @@ class App extends Component {
       </Greet>
       <Greet name="mariam" age="3"/>
       <Welcome name="wakeel" age="22" />,
-      <Hello />
+      <Hello /> */}
       </div>
     )
   }
