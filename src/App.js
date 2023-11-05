@@ -5,6 +5,12 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import { Component } from 'react';
+import avatar from './avatar.png';
+
+function Logo(props){
+  const logoPic = <img src={avatar}/>
+  return logoPic;
+}
 
 // moved this function to components/Greet.js
 // function Greet() {
@@ -28,6 +34,7 @@ class App extends Component {
       <Greet name="mariam" age="3"/>
       <Welcome name="wakeel" age="22" />,
       <Hello /> */}
+      <Logo/>
       </div>
     )
   }
