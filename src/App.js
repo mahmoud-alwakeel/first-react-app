@@ -4,6 +4,7 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import Counter from './components/Counter';
 import { Component } from 'react';
 import avatar from './avatar.png';
 
@@ -24,8 +25,9 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        <Message />
-      {/* <Greet name="wakeel" age="22">
+        <Counter />
+        {/* <Message />
+      <Greet name="wakeel" age="22">
         <p>this is a children probs</p>
       </Greet>
       <Greet name="aly" age="17">
@@ -33,8 +35,8 @@ class App extends Component {
       </Greet>
       <Greet name="mariam" age="3"/>
       <Welcome name="wakeel" age="22" />,
-      <Hello /> */}
-      <Logo/>
+      <Hello />
+      <Logo/> */}
       </div>
     )
   }
